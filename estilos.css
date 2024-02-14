@@ -1,0 +1,161 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color:  hsl(235, 18%, 26%);
+  align-items: center;
+}
+
+.contenedorGeneral {
+  display: flex;
+  border-radius: 16px;
+  flex-direction: row;
+  height: auto;
+  background-color: white;
+  padding: 16px;
+  width: 80%;
+}
+
+.contenedorIzq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 40px;
+}
+
+.textoCentrado {
+  max-width: 90%;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 400;
+  color: hsl(235, 18%, 26%);
+}
+
+.parrafo {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: hsl(235, 18%, 26%);
+  font-weight: 400;
+  margin-left: 12px;
+}
+
+.contenedor {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.svg {
+  margin-right: 10px;
+}
+
+.email {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid hsl(234, 29%, 20%);
+  width: 92%;
+  margin-bottom: 20px;
+}
+
+.errorMail{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#mensajeError{
+  color: hsl(4, 100%, 67%);
+}
+.boton {
+  background-color: hsl(235, 18%, 26%);
+  padding: 16px 20px;
+  width: 100%;
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  border: none;
+  transition: background-color 0.5s ease;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.boton:hover {
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
+}
+
+.oculto{
+  display: none;
+}
+
+
+
+#mensajeCorrecto{
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  z-index: 1000;
+  width: 400px;
+  height: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px;
+  border-radius: 16px;
+  
+}
+
+.svgCorrecto{
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+}
+
+#mensajeCorrecto p{
+  font-family: "Roboto", sans-serif;
+}
+#mensajeCorrecto h4{
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  
+  
+}
+
+a.boton{
+  display: inline-block;
+  text-decoration: none;
+  width: 90%;
+}
+.fondo-gris{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(235, 18%, 26%);
+  z-index: 999;
+}
+
+.ocultar{
+  display: none;
+}
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

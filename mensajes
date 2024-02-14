@@ -1,0 +1,19 @@
+  Thanks for subscribing! A confirmation email has been sent to
+      ash@loremcompany.com. Please open it and click the button inside to
+      confirm your subscription. Dismiss message
+
+
+
+
+function comprobarEmail() {
+    const campoEmail = document.getElementById('mail').value;
+    const botonEnviar = document.getElementById('botonMail');
+
+    botonEnviar.addEventListener('click', function() {
+        if (campoEmail === "ash@loremcompany.com") {
+            enviarMail(); 
+        } else {
+            alert('El correo electrónico ingresado no es válido.');
+        }
+    });
+}
